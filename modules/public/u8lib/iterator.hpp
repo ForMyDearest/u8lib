@@ -177,7 +177,6 @@ namespace u8lib
 				_seq_len = utf8_seq_len(_data[_index]);
 				// if the last sequence is invalid, set it to 1
 				// this operation can avoid visit and move operation overflow
-				// TODO. maybe 0 is better
 				if (!_seq_len || _index + _seq_len > _size) {
 					_seq_len = npos;
 				}
@@ -286,7 +285,6 @@ namespace u8lib
 				_seq_len = u8lib::utf16_seq_len(_data[_index]);
 				// if the last sequence is invalid, set it to 1
 				// this operation can avoid visit and move operation overflow
-				// TODO. maybe 0 is better
 				if (!_seq_len || _index + _seq_len > _size) {
 					_seq_len = npos;
 				}

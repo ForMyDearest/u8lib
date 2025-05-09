@@ -23,3 +23,7 @@ Unicode library for C++
 
 U8Log just pushes static info along with formatted msg body onto the queue. which causes smaller program size but higher front-end latency.
 In my test, it has a front-end latency of approximately 75ns, while static fmtlog has a front-end latency of approximately 10ns
+
+# TODO
+* [ ] Fix the bug that log pattern can't support "{{}}"
+* [ ] Support std::ranges operations for u8string and u8string_view
