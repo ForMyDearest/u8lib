@@ -1,5 +1,4 @@
-add_requires("doctest")
-add_requires("vld")
+add_requires("doctest 2.4.11")
 
 function TEST(name)
     target(name)
@@ -17,7 +16,6 @@ TEST("base")
 TEST("string_view")
 TEST("string")
 TEST("format")
-TEST("json")
 TEST("guid")
 
 target("logger")

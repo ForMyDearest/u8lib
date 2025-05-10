@@ -1,5 +1,4 @@
-﻿add_requires("yyjson")
-add_requires("mimalloc", { configs = { shared = true } })
+﻿add_requires("mimalloc")
 
 target("u8lib")
 do
@@ -8,7 +7,6 @@ do
     add_rules("c++.unity_build", { batchsize = 16 })
 
     add_deps("compile-flags", { public = true })
-    add_packages("yyjson")
     add_packages("mimalloc")
 
     add_files("private/*.cpp")
