@@ -1,4 +1,4 @@
-add_requires("doctest 2.4.11")
+add_requires("doctest")
 
 function TEST(name)
     target(name)
