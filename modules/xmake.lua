@@ -1,5 +1,5 @@
 ﻿add_requires("yyjson")
-add_requires("mimalloc")
+add_requires("mimalloc", { configs = { shared = true } })
 
 target("u8lib")
 do
