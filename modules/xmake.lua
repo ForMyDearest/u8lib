@@ -1,4 +1,5 @@
-﻿add_requires("mimalloc")
+﻿-- 静态链接有 bug，详见 module manager 板块
+add_requires("mimalloc", { configs = { shared = true } })
 
 target("u8lib")
 do
